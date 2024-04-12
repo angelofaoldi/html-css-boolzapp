@@ -21,20 +21,63 @@ body {
     /*con  il flex andremo poi ad inserire un container centrato (margin: auto) per la modalità desktop*/
 }
 
-.container {
-    background-color: blue;
-    height: 100%;
-    width: 100%;
-}
 
 .nav {
     display: none;
 }
 
 
+.container {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-mobile {
+    display: flex;
+    /*height: 100% ? */
+    
+}
+
+#av1 {
+    height: 150px;
+    /* height 80% ? */ 
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+
+/**********************************
+************ UTILITIES ************
+***********************************/
+
+.h10m {
+    height: 10%;
+    background-color: #eaeaea;
+
+}
+
+.h80m {
+    height: 80%;
+    background-color: green;
+}
+
+.h90m {
+    height: 90%;
+    background-color: lightblue;
+}
+
+.bor {
+    border: 2px solid black;
+}
+
+
+
 /**********************************
 ********* MEDIA QUERIES ***********
 ***********************************/
+
+
 
 /************ MOBILE **************/
 
@@ -42,8 +85,6 @@ body {
 
    
 }
-
-
 
 /************ TABLET **************/
 
@@ -77,6 +118,9 @@ body {
         margin: auto 0 auto 5%;
     }
 
+        /* qui ho fatto un calcolo matematico di percentuali 
+        tra .nav e .container. vedo che il layout funziona 
+        comunque, almeno adesso, almeno visivamente*/
 
     .container {
         width: 55%;
