@@ -6,6 +6,8 @@
 /************** RESET *************/
 
 
+/* approccio MOBILE FIRST */
+
 
 /**********************************
 ************** BODY ***************
@@ -19,3 +21,67 @@ body {
     /*con  il flex andremo poi ad inserire un container centrato (margin: auto) per la modalità desktop*/
 }
 
+.container {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    display: none;
+}
+
+
+/**********************************
+********* MEDIA QUERIES ***********
+***********************************/
+
+/************ MOBILE **************/
+
+@media  screen and (min-width: 576px;){
+
+   
+}
+
+
+
+/************ TABLET **************/
+
+@media screen and (min-width: 992px){
+    body {
+        background-color: darksalmon;
+    }
+
+    .nav {
+        background-color: red;
+        height: 100%;
+        width: 10%;
+        display: block;
+    }
+
+    .container {
+        background-color: blue;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+/************ DESKTOP **************/
+
+@media screen and (min-width: 1200px){
+
+    .nav {
+        width: 35%;
+        height: 95%;
+        margin: auto 0 auto 5%;
+    }
+
+
+    .container {
+        width: 55%;
+        height: 95%;
+        margin: auto 5% auto 0;
+    }
+
+}
