@@ -5,3 +5,17 @@
 }
 /************** RESET *************/
 
+
+
+/**********************************
+************** BODY ***************
+***********************************/
+
+body {
+    height: 100vh;
+    /* diamo un'altezza relativa al body in modo da poter gestire meglio i ridimensionameti*/
+    background-color: yellow;
+    display: flex;
+    /*con  il flex andremo poi ad inserire un container centrato (margin: auto) per la modalità desktop*/
+}
+
